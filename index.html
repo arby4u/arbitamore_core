@@ -4040,7 +4040,8 @@ checkTrialToasts();
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./service-worker.js')
+    navigator.serviceWorker.register('/arbitamore_core/service-worker.js')
+
       .catch(function(err) { console.warn('SW registration failed:', err); });
   });
 }
